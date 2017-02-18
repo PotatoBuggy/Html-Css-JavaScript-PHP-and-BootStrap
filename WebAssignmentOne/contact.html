@@ -1,0 +1,105 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                background-image: url("water.JPG");
+                background-repeat: repeat;
+                background-size: cover;
+            }
+            div#naviBar{
+                background-color: purple;
+            }
+            div#naviBar h1{
+                margin: 0;
+                padding: .3em 0 .3em .5em;
+                font-size: 2.2em;
+                font-weight: normal;
+                color: white;
+            }
+            div#vnaviBar ul{
+                
+                padding: 0;
+                float: left;
+            }
+            div#vnaviBar ul li a{
+                
+                text-decoration: none;
+            }
+            div#vnaviBar ul li #barOne{
+                
+                display: block;
+                width: 180px;
+                color: white;
+                background-color: purple;
+                font-size: 26px;
+            }
+            div#vnaviBar ul li #barTwo{
+                
+                display: block;
+                width: 180px;
+                color: white;
+                background-color: purple;
+                font-size: 26px;
+            }
+            div#vnaviBar ul li #barThree{
+                
+                display: block;
+                width: 180px;
+                color: white;
+                background-color: purple;
+                font-size: 26px;
+            }
+            div#container{
+                
+                background-color: white;
+                opacity: 0.7;
+                border: 1px solid black;
+                font-size: 20px;
+                margin-left: 190px;
+                margin-right:200px; 
+                margin-top: 16px;
+                padding: .3em 0 .3em .5em;
+            }
+        </style>
+        <title> Contact </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="site.css">
+    </head>
+    <body>
+        <div id="naviBar">
+            <h1> Myat Min Maung</h1>
+        </div>
+        <div id="vnaviBar">
+            <ul>
+                <li><a id="barOne" href="home.html"> Home</a> </li>
+                <li> </li>
+                <li><a id="barTwo" href="aboutMe.html"> About Me </a> </li>
+                <li> </li>
+                <li><a id="barThree" href="entertainment.html"> Fun </a> </li>
+            </ul>
+        </div>
+        <div id="container">
+            <h1> Contact Information </h1>
+            <img src="phone.jpg" alt="LOGO" style="width:200px;height: 250px">
+            <p> Phone: 415-416-1234<br> 
+                Email: doctorwho@tardis.com</p>
+            <p> If you wish to leave your contact information, 
+                fill the form below.</p>
+            <form action="contact.php" method="post">
+                First Name:<br>
+                <input type="text" name="firstName"><br>
+                Last Name:<br>
+                <input type="text" name="lastName"><br>
+                Phone:<br>
+                <input type="text" name="phone"><br>
+                Email:<br>
+                <input type="text" name="email"><br>
+                <input type="submit"><br>
+                
+            </form>
+        </div>
+    </body>
+</html>
